@@ -19,7 +19,11 @@ run_analysis <- function() {
   
   # Combine data
   thedata <- rbind(get_data('test'), get_data('train'))
+  write.table(thedata, file='tidydata.txt', row.names = FALSE, col.names = FALSE)
   
-  return(thedata)
+  thedata2 <- aggregate(thedata, list(label=thedata$label, subject=thedata$subject), mean)
+  write.table(thedata2[,c(3:81, 1:2)], "tidydata2.txt", row.names = FALSE, col.names = FALSE)
+  
+  write.table(colnames(thedata), file='colnames.txt', row.names = FALSE, col.names = FALSE)
   
 }
