@@ -6,7 +6,7 @@ The data source from this tidy data set were taken from http://archive.ics.uci.e
 
 According to dataset information (http://archive.ics.uci.edu/ml/datasets/Human+Activity+Recognition+Using+Smartphones), The source dataset is composed from a human activity recognition using smartphone sensors experiment which was conducted by UCI. The raw dataset is multivariate and timeseries and have been labeled and noise filtered. 
 
-The processed tidy dataset (tidydata.txt) was processed from the source dataset automatically by using an R script (run_analysis.R) by grouping all values by label and subject columns and agregating the data with mean function. Not all the columns were agregated, only some columns which have "mean()" and "std()" on its name (as per course project instruction).
+The first processed tidy dataset (tidydata.txt) was processed from the source dataset automatically by using an R script (run_analysis.R). The second one (tidydata2.txt) is produced from the first tidy dataset by grouping all values by label and subject columns and agregating the data with mean function. Not all the columns were agregated, only some columns which have "mean()" and "std()" on its name (as per course project instruction).
 
 ## Variable Naming
 
