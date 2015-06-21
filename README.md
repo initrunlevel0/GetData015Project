@@ -8,7 +8,7 @@ This repository was my submission for Coursera class project: "Getting and Clean
 
 * `run_analysis.R` The main script.
 * `CodeBook.md` this file.
-* `tidydata1.txt` the first tidy data without aggregation.
+* `tidydata.txt` the first tidy data without aggregation.
 * `tidydata2.txt` the second tidy data with mean aggregation grouped by subject and label.
 * `colnames.txt` column names for `tidydata.txt`.
 
@@ -33,7 +33,7 @@ The run_analysis() function script will download the appropriate file if invoked
 - Transform the label variable from a numeric into a factor based from `activity_labels.txt`.
 - Add a column for subject from `test/subject_txt`.
 - Do the same step for "train" data and combine it with current data.
-- Save the data into `tidydata1.txt`
+- Save the data into `tidydata.txt`
 - Do a mean aggregation with subject and label as grouping columns, save it into `tidydata2.txt`.
 
 To simplify the code, I have created a `get_data(type = character)` function to prevent rewriting the same code for the first seven steps.
