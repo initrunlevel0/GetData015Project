@@ -7,7 +7,7 @@ This repository was my submission for Coursera class project: "Getting and Clean
 ## Files Included
 
 * `run_analysis.R` The main script.
-* `CodeBook.md` this file.
+* `CodeBook.md` The Code Book.
 * `tidydata.txt` the first tidy data without aggregation.
 * `tidydata2.txt` the second tidy data with mean aggregation grouped by subject and label.
 * `colnames.txt` column names for `tidydata.txt`.
